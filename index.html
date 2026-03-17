@@ -4,46 +4,128 @@
     <title>VilleIT App</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         body {
-            font-family: Arial;
-            background: #f4f4f4;
-            text-align: center;
-            padding: 40px;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
         }
+
         .container {
+            max-width: 700px;
+            margin: 50px auto;
             background: white;
             padding: 30px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: auto;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
         }
+
         h1 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            margin-top: 25px;
+        }
+
+        .section h2 {
             color: #333;
+            margin-bottom: 10px;
         }
-        p {
+
+        .section p {
             color: #666;
+            line-height: 1.6;
         }
-        a {
-            color: blue;
-            text-decoration: none;
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .feature-box {
+            background: #f7f9fc;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .feature-box strong {
+            color: #111;
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
-    <h1>My Android App</h1>
-    <p>Welcome to official app website.</p>
+    <h1>VilleIT App</h1>
+    <p class="tagline">Smart Tools & Utility Apps for Everyday Life</p>
 
-    <h3>About App</h3>
-    <p>This app provides useful features and tools for users.</p>
+    <div class="section">
+        <h2>About Our Apps</h2>
+        <p>
+            VilleIT App provides powerful and easy-to-use mobile applications like Astrology tools,
+            Photo Recovery, and other useful utilities designed to make your life easier and smarter.
+        </p>
+    </div>
 
-    <h3>Contact</h3>
-    <p>Email: yashmylife1111@gmail.com</p>
+    <div class="section">
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-box">
+                🔮 <strong>Astrology Tools</strong><br>
+                Daily horoscope, predictions, and spiritual insights.
+            </div>
 
-  
+            <div class="feature-box">
+                📸 <strong>Photo Recovery</strong><br>
+                Recover deleted photos quickly and safely.
+            </div>
+
+            <div class="feature-box">
+                ⚡ <strong>Fast & Easy</strong><br>
+                Simple UI with fast performance for all users.
+            </div>
+        </div>
+    </div>
+
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p>Email: yashmylife1111@gmail.com</p>
+    </div>
+
+    <div class="footer">
+        © 2026 VilleIT App. All rights reserved.
+    </div>
 </div>
 
 </body>
